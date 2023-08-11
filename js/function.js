@@ -6,7 +6,7 @@ $(function () {
 	let idx = 0;
 
 	const moveFn = function () {
-		$mianImg.parent().animate({ left: -100 * idx + '%' });
+		$mianImg.parent().animate({ left: -100 * idx + '%' }, 1000);
 		$indicator.eq(idx).parent().addClass('on');
 		$indicator.eq(idx).parent().siblings().removeClass('on');
 	};
